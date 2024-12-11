@@ -14,7 +14,7 @@ Boot into macOS recovery mode or another accessible terminal, and mount the file
 ```bash
 mount -uw /Volumes/macOS
 ```
-### 2.Replace /Volumes/macOS with the appropriate volume name if your macOS installation resides in a different volume.
+### 2.Replace `/Volumes/macOS` with the appropriate volume name if your macOS installation resides in a different volume.
 
 ### 3.Locate the Problematic Configuration Files
 Search for the configuration files related to display settings and WindowServer:
