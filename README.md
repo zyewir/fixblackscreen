@@ -12,15 +12,15 @@ This guide provides a step-by-step solution for resetting the refresh rate in ma
 ### 1.Mount the File System in Read/Write Mode
 Boot into macOS recovery mode or another accessible terminal, and mount the file system with write permissions:
 ```bash
-mount -uw /Volumes/MacOs
+mount -uw /Volumes/macOS
 ```
-### 2.Replace /Volumes/MacOs with the appropriate volume name if your macOS installation resides in a different volume.
+### 2.Replace /Volumes/macOS with the appropriate volume name if your macOS installation resides in a different volume.
 
 ### 3.Locate the Problematic Configuration Files
 Search for the configuration files related to display settings and WindowServer:
 ```bash
-find /Volumes/MacOs/ -name "com.apple.preference.displays" 2>/dev/null
-find /Volumes/MacOs/ -name "com.apple.windowserver.plist" 2>/dev/null
+find /Volumes/macOS/ -name "com.apple.preference.displays" 2>/dev/null
+find /Volumes/macOS/ -name "com.apple.windowserver.plist" 2>/dev/null
 ```
 ### 4.Remove the Corrupted Files
 Navigate to the directories where the files are located and delete them using the following commands:
